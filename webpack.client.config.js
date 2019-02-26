@@ -1,14 +1,13 @@
 const path = require("path")
-const webpackNodeExternals = require("webpack-node-externals")
 
 module.exports = {
     target: "node",
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/client/index.js",
     output:{
-        filename: "bundle.js",
-        path: path.resolve(__dirname, "build"),
-        publicPath: "/build"
+        filename: "client_bundle.js",
+        path: path.resolve(__dirname, "build/public"),
+        publicPath: "/build/public"
     },
     module:{
         rules:[
@@ -19,6 +18,8 @@ module.exports = {
                 options:{
                     presets:[
                         "react",
+                        "es2015",
+                        "es2017",
                         "stage-0",
                         ["env", {
                             target: { browsers: ["last 2 versions"]}
@@ -27,6 +28,5 @@ module.exports = {
                 }
             }
         ]
-    },
-    externals: [webpackNodeExternals()]
+    }
 }
