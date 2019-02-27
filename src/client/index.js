@@ -4,10 +4,12 @@ import { BrowserRouter } from "react-router-dom"
 
 import Routes from "../common/components"
 
-const app = (<BrowserRouter>
-                <Routes/>
-            </BrowserRouter>)
+const app = (
+    <BrowserRouter>
+        <Routes/>
+    </BrowserRouter>
+)
 
 ReactDOM.hydrate(app,
-    document.getElementById('#root')
+    document.getElementById("root")
 )
