@@ -1,16 +1,16 @@
-import React from "react"
-import { Switch, Route } from "react-router"
+import React from "react";
+import { Switch, Route } from "react-router";
 
-import LandingPage from "./LandingPage"
+import LandingPage from "./LandingPage";
 
-class Routes extends React.Component{
-    render(){
-        return (
-            <Switch>
-                <Route path="/" component={LandingPage}/>
-            </Switch>
-        )
-    }
+class Routes extends React.Component {
+  render() {
+    return (
+      <Switch>
+        <Route path="/" component={LandingPage} />
+      </Switch>
+    );
+  }
 }
 
-export default Routes
+export default Routes;
