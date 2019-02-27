@@ -7,7 +7,10 @@ class Routes extends React.Component {
   render() {
     return (
       <Switch>
-        <Route path="/" component={LandingPage} />
+        <Route
+          path="/"
+          render={props => <LandingPage {...props} data={this.props.data} />}
+        />
       </Switch>
     );
   }

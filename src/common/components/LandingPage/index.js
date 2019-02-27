@@ -13,10 +13,12 @@ class LandingPage extends React.Component {
   }
 
   render() {
+    const { data } = this.props;
     return (
       <div>
         <Header />
         <h1>Landing Page</h1>
+        <h2>Hi {data.name}</h2>
         <button onClick={this.printConsole.bind(this)}>Print in Console</button>
       </div>
     );
