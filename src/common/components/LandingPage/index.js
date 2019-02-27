@@ -18,8 +18,8 @@ class LandingPage extends React.Component {
       <div>
         <Header />
         <h1>Landing Page</h1>
-        <h2>Hi {data.name}</h2>
         <button onClick={this.printConsole.bind(this)}>Print in Console</button>
+        <div>Select a language</div>
       </div>
     );
   }
